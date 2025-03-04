@@ -1,0 +1,180 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero_background.jpg'); /* ใส่ภาพพื้นหลัง */
+
+    color: white;
+    padding: 60px 20px;
+}
+
+.hero-content  {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.container {
+    width: 80%;
+    max-width: 1000px; /* จำกัดความกว้างไม่ให้เกิน 1000px */
+    margin: auto; /* จัดให้อยู่ตรงกลาง */
+    padding: 20px; /* เพิ่มช่องว่างรอบข้อความ */
+}
+
+.highlight {
+    color: #b8dcb8; /* สีเขียว */
+}
+
+.download-btn {
+    background-color: #099c09;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center; /* จัดข้อความในปุ่มให้ตรงกลาง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.download-btn:hover {
+    background-color: #009900;
+}
+/* ตั้งค่าสไตล์ของ Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #4c5835; /* สีพื้นหลังเทา */
+    text-align: center; /* จัดให้อยู่ตรงกลาง */
+    padding: 50px 0;
+    color: white; /* สีข้อความทั่วไป */
+}
+
+/* กำหนดสีเขียวให้คำว่า "healthy" */
+.green-text {
+    color: #b0c7b0; /* สีเขียว */
+    font-weight: bold;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Content Container */
+.content-container {
+    width: 60%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Content Box */
+.content-box {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    gap: 20px;
+}
+
+/* รูปภาพ */
+.content-box img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* ข้อความ */
+.content-text {
+    width: 60%;
+}
+
+.content-text h2 {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ไอคอน */
+.icon {
+    font-size: 24px;
+    color: #00c300;
+    font-size: 32px; /* ปรับขนาดไอคอน */
+    color: #00c300; /* เปลี่ยนสีเป็นเขียว */
+    vertical-align: middle; /* จัดให้ไอคอนอยู่ตรงกลางกับตัวหนังสือ */
+    margin-right: 10px; /* เพิ่มช่องว่างด้านขวา */
+
+}
+
+/* ปุ่ม More Details */
+.more-details {
+    background-color: white;
+    border: 1px solid #00c300;
+    color: #00c300;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.more-details:hover {
+    background-color: #00c300;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-container {
+        width: 90%;
+    }
+
+    .content-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-box img {
+        width: 100%;
+    }
+
+    .content-text {
+        width: 100%;
+    }
+}
+
